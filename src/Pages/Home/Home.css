@@ -1,0 +1,123 @@
+h1{
+    color:#fff;
+    font-family: 'Lato';
+    font-weight:100;
+    padding:30px;
+    display:block;
+  }
+
+.wrapper{
+    color: #FFF;
+    background-color: #fff;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -20%);
+  }
+
+.wrapper .icon{
+    margin:20px;
+  }
+
+.portal{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    background-color: #333333;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%; width: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    background-size: cover;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+.contenido{
+    margin-right: 50px;
+}
+
+.hamburguer-button {
+    display: flex;
+    position: relative;
+  }
+  .style-button {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left:9px;
+    top: -5px;
+    z-index: -1;
+  }
+  .cbx {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .cbx:checked + nav {
+      transform: translate(0, 0px);
+  }
+  nav {
+      transition-duration: 500ms;
+      transform: translate(-100vw, 0px);
+      height: 100vh;
+  }
+  .cbx:checked ~ .style-button label:nth-child(1) {
+            transform: rotate3d(0, 1, 1, 
+  426deg) translate(22px, 6px);
+  }
+  .cbx:checked ~ .style-button label:nth-child(3) {
+    transform: rotate3d(0, 1, 1, 292deg) translate(10px, -12px);
+  }
+  .cbx:checked ~ .style-button label:nth-child(2) {
+    opacity: 0;
+  }
+  label {
+    clip-path: inset(80% 0 0 0);
+    background: white;
+    width: 40px;
+    height:50px;
+    transition-duration: 500ms;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  form {
+    padding-right: 85%;
+    z-index: 2;
+  }
+  nav {
+    position: absolute;
+    background-color: #333333;
+    z-index: -14;
+  }
+  li:hover {
+    background-color: black;
+    color: white;
+  }
+  li {
+    transition-duration: 500ms;
+    text-align: center;
+    font-size: 300%;
+    width: 100vw;
+    list-style: none;
+    cursor:pointer;
+  }
+/**/
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+h1 {
+  text-align:center;
+}
