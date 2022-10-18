@@ -1,4 +1,5 @@
 import React, {useContext, useState} from "react";
+import Logo from "../../assets/sooa_logo_2.png";
 import Modal from "./Modal";
 import {
     ModalContainer,
@@ -61,11 +62,12 @@ const Login: React.FC<LoginModalWrapperProps> = ({onBackdropClick, isModalVisibl
         return null
     }
 
-    return (<Modal onBackdropClick={onBackdropClick} >
-        <ModalContainer >
+    return (<Modal onBackdropClick={onBackdropClick}>
+        <ModalContainer>
             <CloseBtn onClick={onBackdropClick}>
                 <CloseX />
             </CloseBtn>
+            <img className="navLogo" src={Logo} alt="image"/>
             <Header>Inicia Sesión</Header>
             <Message>¡Bienvenido!</Message>
             <LoginForm onSubmit={handleSubmit}>

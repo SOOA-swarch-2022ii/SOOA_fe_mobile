@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ModalContainer = styled.div`
-    background-color: white;
+    background-color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@ export const ModalContainer = styled.div`
     font-size: 26px;
 `;
 export const Header = styled.h3`
-    color: #333333;
+    color: #aaa;
     font-size: 35px;
     line-height: 1em;
     font-weight: 300;
@@ -55,6 +55,7 @@ export const CloseBtn = styled.div`
     `
 
 export const LoginForm = styled.form`
+  padding-right: 0;
   color: #333333;
   text-align: center;
 `;

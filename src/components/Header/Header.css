@@ -1,0 +1,47 @@
+.header-nav {
+    background-color: #333333;
+    border-bottom-color: #5d5d5d;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 50px;
+}
+
+.navLogo{
+  object-fit: fill;
+  object-position: 0% 0%;
+    height: 75%;
+    width: 75%;
+}
+
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 90%;
+    margin: 0;
+    width: 10%;
+    text-decoration: none;
+    background: #333333;
+    color: #c7c7c7;
+    border-radius: 5px;
+    border: solid #5d5d5d 2.5px;
+    font-family: inherit;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.navigation{
+    z-index: 2;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}

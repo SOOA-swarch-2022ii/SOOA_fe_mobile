@@ -36,7 +36,7 @@ const App = () => {
         getLandingPage();
     }, [])
         return (
-            <section className="showcase" >
+            <section className="showcase">
                 <div className="background"></div>
 
                 <div className="content">

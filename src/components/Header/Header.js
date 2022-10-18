@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/sooa_logo_2.png";
 import {NavLink, useNavigate} from 'react-router-dom'
-import './Header.less';
+import './Header.css';
 
 const Header = ({isLogged}) =>{
     const navigate = useNavigate();
@@ -10,28 +10,18 @@ const Header = ({isLogged}) =>{
         navigate('/');
         isLogged(false)
     };
+    
     return(
-        <div id="header-nav">
-            <div class="container">
+        <div className="header-nav">
+            <div className="container">
 
-                <div class="brand">
-                    <a href="/"><h1>Ghostlab</h1></a>
+                <div onClick={handleClick} className="brand">
+                    <img className="navLogo" src={Logo} alt="image"/>
                 </div>
 
-                <a href="#menu" class="menu-link">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                    <span class="bar3"></span>
-                </a>
-
-                <nav id="menu" role="navigation">
-                    <ul>
-                        <li><a >About</a></li>
-                        <li><a >Products</a></li>
-                        <li><a >Services</a></li>
-                        <li><a >Contact</a></li>
-                    </ul>
-                </nav>
+                <div>
+                    <a className="logout" >cerrar sesión</a>
+                </div>
             </div>
         </div>
     )
